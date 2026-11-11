@@ -1,9 +1,12 @@
-{% extends "base.html %"}
+{% extends "base.html" %}
 {% block content %}
 <h1>Endre telefonnummer for {{ kunde.navn }}</h1>
-<form method="POST" action="{{ url_for('lagre_telefon', kunde_id=kunde.kunde) }}">
+<form method="POST" action="{{ url_for('lagre_telefon', kunde_id=kunde.kunde_id) }}">
     <label for="telefon">Nytt telefonnummer</label>
     <input id="telefon" name="telefon" type="tel" maxlength="20" value="{{ kunde.telefon or ''}}">
     <button type="submit">Lagre telefonnummer</button>
+</form>
+<form action="{{ url_for('slett_kunde', kunde_id=kunde.kunde_id) }}" method="POST">
+    <button type="submit">Slett {{ kunde.navn }}</button>
 </form>
 {% endblock %}

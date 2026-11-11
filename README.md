@@ -2,3 +2,6 @@ Uke46
 Oppgave verksted_enkel - Laget av Henrik Huseby
 
 Dette er en database til mariadb sql / database
+
+
+0. Check-off, testlogg og refleksjon Grunnkurset Jeg viser kunder fra MariaDB i nettleseren. Jeg registrerer en oppdiktet kunde fra skjemaet. Jeg finner samme kunde i SQL-terminalen. Jeg forklarer sammenhengen mellom name, request.form og SQL-parametere. Jeg forklarer execute, fetchall, commit og redirect. Jeg viser labels og synlig tastaturfokus. Jeg har holdt appfilen med passord utenfor Git. Elevhefte_1_Flask_MariaDB_nybegynner_VG2_oppdatert_v2.md 2026-11-04 14 / 15 Hvis du har gjort utvidelsene Jeg viser søk med GET. Jeg endrer telefonnummer for riktig kunde med UPDATE og WHERE. Jeg sletter en egen testkunde med POST og DELETE. Jeg forklarer forskjellen på fetchone() og fetchall(). Test Forventet resultat Faktisk resultat Åpne kundelisten Samme kunder som i databasen Fyll inn Registrere med ubrukt e-post Én ny kunde Fyll inn Navn med apostrof Navnet lagres riktig Fyll inn Oppdatere listen etter lagring Ingen ekstra registrering Fyll inn Bruke Tab og Enter Skjemaet kan brukes Fyll inn Skriv en kort README med formål, filenes oppgaver, installasjon og oppstart. Bruk plassholdere for innstillinger. Forklar dataflyten: nettleser → Flask → SQL → MariaDB → Flask → Jinja → nettleser.
