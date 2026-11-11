@@ -3,11 +3,22 @@
 <h1>kunder i verkstedet</h1>
 <table>
     <caption>Registrere kunder</caption>
+    <form action="{{ url_for('kunder') }}" method="GET">
+        <label for="sok">Søk etter kundenavn</label>
+        <input id="sok" name="sok" type="search">
+        <button type="submit">søk</button>
+    </form>
+    <p><a href="{{ url_for('kunder') }}">Vis alle kunder</a></p>
     <thead>
         <tr>
             <th scope="col">ID</th>
             <th scope="col">navn</th>
             <th scope="col">E-post</th>
+            <td> 
+                <a href="{{ url_for('rediger_telefon', kunde_id=kunde.kunde_id )}}">
+                    Endre telefon for {{ kunde.navn }}
+                </a>
+            </td>
             <th scope="col">Telefon</th>
         </tr>
         <tbody>

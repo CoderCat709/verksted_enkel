@@ -10,6 +10,7 @@
     <a href="#innhold">Hopp til hovedinnhold</a>
     <nav aria-label="Hovedmeny">
         <a href="{{ url_for('kunder') }}">kundeliste</a>
+    <a href="{{ url_for('ny_kunde') }}">Registrer kunde</a>
     </nav>
     <main id="innhold" tabindex="-1">
         {% block content %}{% endblock %}
